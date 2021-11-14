@@ -1,4 +1,4 @@
-*{
+*,p{
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
 }
@@ -80,7 +80,7 @@ header nav{
 }
 
 .shaped {
-    background: black url(http://stroykadoma.org/wp-content/uploads/2016/01/%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%8C%D0%B5%D1%80-%D0%BC%D0%B0%D0%BB%D0%B5%D0%BD%D1%8C%D0%BA%D0%BE%D0%B9-%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%D1%8B-2016.jpg) center top no-repeat;
+    background: linear-gradient( rgba(37, 58, 78, 0.4), rgba(0, 0, 0, 0.5) ), url(http://stroykadoma.org/wp-content/uploads/2016/01/%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%8C%D0%B5%D1%80-%D0%BC%D0%B0%D0%BB%D0%B5%D0%BD%D1%8C%D0%BA%D0%BE%D0%B9-%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%D1%8B-2016.jpg) center top no-repeat;
     background-size:cover;
     float:right;
     shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
@@ -105,15 +105,86 @@ header nav{
     list-style-type: none;
     display: flex;
     align-items: center;
+    width: 140%;
 }
 
 .desc-hb ul li svg{
     margin-right: 40px;
+
+}
+.shaped{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*.shaped:after {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    bottom: 0;*/
+/*    background: rgba(0,0,0,.5);*/
+/*    z-index: 2;*/
+/*}*/
+
+.form-feedback{
+    background: #253A4E;
+    width: 40%;
+    text-align: center;
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+    -moz-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+    box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 300px;
 }
 
+.form-feedback form p{
+    text-align: left;
+
+}
+
+.form-feedback form button{
+    background: #FF9900;
+    width: 60%;
+}
+
+.form-feedback form textarea,input{
+    width: 100%;
+    color: black;
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 10px 10px;
+
+}
+
+.form-feedback form p{
+    font-size: 12px;
+    margin: 0px;
+}
+.d-form-none{
+    display: none;
+}
 @media (max-width:992px){
     .tel-1{
     display: none;
+    }
+    .shaped{
+        display: none;
+    }
+
+    .form-feedback{
+        width: 80%;
+        margin-left: 0px;
+    }
+    .d-form-none{
+        display: block;
+    }
+    .desc-hb{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .tel-2{
         display: flex;
