@@ -393,4 +393,10 @@ footer li{
         align-items: center;
         font-weight: bold;
     }
+    .desc-hb ul li {
+        width: 100%;
+    }
+    .form-feedback{
+        width: 100%;
+    }
 }
