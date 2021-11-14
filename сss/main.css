@@ -263,11 +263,16 @@ header{
 .pr-b{
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
+    flex-wrap: wrap;
 }
 .pr-b div{
     margin: 10px 10px;
+    width: 30%;
+    height: 200px;
+    border-radius: 10px;
 }
+
 .bg-1{
     background-image: url("/img/Примеры/16.jpeg") ;
     background-size: 100% 100%;
@@ -321,6 +326,13 @@ footer li{
     padding-bottom: 50px;
 }
 @media (max-width:992px){
+
+
+
+    .pr-b div{
+        width: 40%;
+    }
+
     .tel-1{
     display: none;
     }
@@ -349,11 +361,32 @@ footer li{
         display: flex;
         justify-content: space-between;
     }
+    .services{
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .services div{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .f-b{
+        padding: 20px;
+    }
+    .footer{
+        border-bottom: 0px solid #FFFFFF ;
+        text-align: center;
+    }
+    .footer .row div{
+        padding: 10px;
+    }
 }
 
 @media (max-width:576px){
     .tel-2{
         display: none;
+    }
+    .pr-b div{
+        width: 100%;
     }
     .tel-3{
         display: flex;
