@@ -7,6 +7,10 @@ h1,ul,li{
     transition: 1s all ease;
 }
 
+.row{
+    margin: 0px;
+}
+
 .container-fluid{
     padding: 0px;
 }
