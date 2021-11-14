@@ -1,0 +1,128 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+
+h1,ul,li{
+    transition: 1s all ease;
+}
+
+.container-fluid{
+    padding: 0px;
+}
+
+header nav{
+    background: #253A4E;
+}
+
+
+header a{
+    color: #F0F8FFFF;
+}
+.navbar-brand{
+    font-weight: bold;
+}
+
+.tel-1{
+    background: #FF9900;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+.tel-1 svg{
+    margin-right: 5px;
+}
+.tel-2 svg{
+    margin-right: 5px;
+}
+.tel-3 svg{
+    margin-right: 5px;
+}
+.tel-2{
+    background: #FF9900;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: none;
+}
+.tel-3{
+    background: #FF9900;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    display: none;
+}
+
+button:focus{
+    outline: none;
+}
+
+header ul{
+    margin: auto;
+}
+
+.navbar-toggler svg{
+    width: 40px;
+    height: 40px;
+}
+header nav{
+    border-bottom: 1px solid #3E4D5B;
+}
+
+
+.header-banner{
+    background: #253A4E;
+}
+
+.shaped {
+    background: black url(http://stroykadoma.org/wp-content/uploads/2016/01/%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%8C%D0%B5%D1%80-%D0%BC%D0%B0%D0%BB%D0%B5%D0%BD%D1%8C%D0%BA%D0%BE%D0%B9-%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%D1%8B-2016.jpg) center top no-repeat;
+    background-size:cover;
+    float:right;
+    shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+    shape-margin:20px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%)
+}
+
+
+.desc-hb h1{
+    font-weight: bold !important;
+    padding: 50px 80px 50px 50px;
+}
+.desc-hb ul{
+    font-weight: normal;
+    font-size: 20px;
+    padding: 0px 0px 50px 50px;
+}
+
+.desc-hb ul li{
+    margin-top: 40px;
+    list-style-type: none;
+}
+
+@media (max-width:992px){
+    .tel-1{
+    display: none;
+    }
+    .tel-2{
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+    }
+    nav.navbar.navbar-expand-lg{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width:576px){
+    .tel-2{
+        display: none;
+    }
+    .tel-3{
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+    }
+}
