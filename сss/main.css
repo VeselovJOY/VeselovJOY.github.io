@@ -88,6 +88,7 @@ header ul{
 .navbar-toggler svg{
     width: 40px;
     height: 40px;
+    fill: #F6F5F5;
 }
 header nav{
     border-bottom: 1px solid #3E4D5B;
